@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_add.*
 import latihan.android.com.latihanandroidfinal.R
 import latihan.android.com.latihanandroidfinal.upload.FullCostType
+import latihan.android.com.latihanandroidfinal.upload.OtherAskType
+import latihan.android.com.latihanandroidfinal.upload.PeopleWantedType
 
 class AddFragment: Fragment() {
     companion object {
@@ -23,6 +25,14 @@ class AddFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
         fct.setOnClickListener {
             val intent = Intent(context, FullCostType::class.java)
+            startActivity(intent)
+        }
+        otp.setOnClickListener {
+            val intent = Intent(context, OtherAskType::class.java)
+            startActivity(intent)
+        }
+        pwt.setOnClickListener {
+            val intent = Intent(context, PeopleWantedType::class.java)
             startActivity(intent)
         }
     }

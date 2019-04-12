@@ -19,6 +19,8 @@
         <activity android:name=".MainActivity"/>
         <activity android:name=".Login"/>
         <activity android:name=".upload.FullCostType"/>
+        <activity android:name=".upload.OtherAskType"/>
+        <activity android:name=".upload.PeopleWantedType"/>
     </application>
 
 </manifest>

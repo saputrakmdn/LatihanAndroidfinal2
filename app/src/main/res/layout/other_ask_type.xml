@@ -6,7 +6,7 @@
     <TextView android:layout_width="match_parent"
               android:layout_marginTop="90dp"
               android:layout_height="wrap_content"
-              android:text="FULL COST TYPE"
+              android:text="OTHER ASK TYPE"
               android:textAlignment="center"
               android:textSize="30sp"
               android:textColor="#ba8d05"
@@ -19,7 +19,7 @@
                   android:backgroundTint="#afaca3"
                   android:layout_marginLeft="20dp"
                   android:layout_marginRight="20dp"
-                  android:id="@+id/image_fct"
+                  android:id="@+id/upload"
     >
         <ImageView android:layout_width="50dp"
                    android:layout_height="50dp"
@@ -34,27 +34,30 @@
                   android:textSize="15sp"
         />
     </LinearLayout>
-    <EditText android:layout_width="match_parent"
+    <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:hint="How Long?"
-              android:layout_marginLeft="20dp"
               android:layout_marginRight="20dp"
-              android:layout_marginTop="20dp"
+              android:layout_marginLeft="20dp"
+              android:text="choose Category"
+              android:textSize="15sp"
+              android:textColor="#000"
+              android:layout_marginTop="10dp"
     />
+    <Spinner android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:entries="@array/category"
+             android:layout_marginLeft="20dp"
+             android:layout_marginRight="20dp"
+    ></Spinner>
     <EditText android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:hint="How Much Budget Do You Have?"
+              android:hint="set default charge"
               android:layout_marginLeft="20dp"
               android:layout_marginRight="20dp"
-    />
-    <EditText android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:hint="How Many People"
-              android:layout_marginLeft="20dp"
-              android:layout_marginRight="20dp"
+              android:layout_marginTop="30dp"
     />
     <LinearLayout android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
+                  android:layout_height="wrap_content"
                   android:gravity="center"
                   android:id="@+id/set_location"
                   android:layout_marginTop="10dp"
@@ -84,8 +87,7 @@
             android:backgroundTint="#0116b2"
             android:text="POST"
             android:textColor="#fff"
-            android:id="@+id/post_full"
+            android:id="@+id/post_other"
     />
-
 
 </LinearLayout>

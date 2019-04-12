@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Latihan Android final</string>
+    <string-array name="category">
+        <item>food</item>
+        <item>Accessoris</item>
+        <item>Gadget</item>
+        <item>Fashion</item>
+    </string-array>
 </resources>
