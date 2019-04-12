@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bckglay"
+>
+    <ImageView android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="80dp"
+               android:src="@drawable/logotitipin"
+    />
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="LOGIN"
+              android:textSize="40sp"
+              android:textAlignment="center"
+              android:textColor="#fff"
+              android:layout_marginTop="10dp"
+    />
+    <LinearLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                 android:layout_margin="15dp"
+                 xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+        <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+        >
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="EMAIL"
+                      android:textSize="20sp"
+                      android:id="@+id/et_emailLogin"
+                      android:textColor="#fff"
+                      android:inputType="textEmailAddress"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:passwordToggleEnabled="true"
+
+        >
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:hint="PASSWORD"
+                      android:inputType="textPassword"
+                      android:textSize="20sp"
+                      android:id="@+id/et_passwordLogin"
+                      android:textColor="#fff"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Forget Password?"
+                  android:textAlignment="textEnd"
+                  android:textColor="#FFF"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+    </LinearLayout>
+    <Button android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="LOGIN"
+            android:textColor="#fff"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:id="@+id/btn_login"
+            android:background="@drawable/lengkung"
+            android:backgroundTint="#022d72"
+    />
+<LinearLayout android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="20dp"
+             >
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="did not have an account?"
+              android:textColor="#fff"
+              android:textSize="20sp"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Register"
+              android:textColor="#e80209"
+              android:id="@+id/tv_register"
+              android:textSize="20sp"
+              android:layout_marginLeft="10dp"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Now!"
+              android:layout_marginLeft="10dp"
+              android:textSize="20sp"
+              android:textColor="#fff"
+    />
+</LinearLayout>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="or Login with"
+              android:textAlignment="center"
+              android:textColor="#fff"
+              android:textSize="20sp"
+    />
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/gl1"
+               android:layout_gravity="center"
+    />
+
+</LinearLayout>

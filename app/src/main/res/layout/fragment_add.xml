@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Choose Upload Type"
+              android:textAlignment="center"
+              android:textSize="30sp"
+              android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+              android:textColor="#f78902"
+    />
+    <Button android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lengkung"
+            android:backgroundTint="#0344bc"
+            android:text="full cost type"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:id="@+id/fct"
+            android:layout_marginTop="10dp"
+    />
+    <Button android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lengkung"
+            android:backgroundTint="#0344bc"
+            android:text="other ask type"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:id="@+id/otp"
+            android:layout_marginTop="10dp"
+    />
+    <Button android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lengkung"
+            android:backgroundTint="#0344bc"
+            android:text="people wanted type"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:id="@+id/pwt"
+            android:layout_marginTop="10dp"
+    />
+
+</LinearLayout>
