@@ -5,32 +5,33 @@ import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import android.view.Window
+import latihan.android.com.latihanandroidfinal.helper.UserHelper
 
 class Splash: AppCompatActivity() {
-    private var delayHandler : Handler? = null
-    private val splashDelay : Long = 3000
-
-    internal val mRunnable : Runnable = Runnable {
-        if(!isFinishing){
-            val intent = Intent(applicationContext, Login::class.java)
-            startActivity(intent)
-            finish()
-        }
-    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.splash)
-
-        delayHandler = Handler()
-        delayHandler!!.postDelayed(mRunnable, splashDelay)
-
+        Handler().postDelayed({
+            val intent = Intent(this, Login::class.java)
+            startActivity(intent)
+            UserHelper(this).StatusSplash = true
+            finish()
+        }, 3000)
     }
-
-    override fun onDestroy() {
-        if(delayHandler != null){
-            delayHandler!!.removeCallbacks(mRunnable)
-        }
-        super.onDestroy()
     }
-}
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//        this.requestWindowFeature(Window.FEATURE_NO_TITLE)
+//        setContentView(R.layout.splash)
+//
+//        delayHandler = Handler()
+//        delayHandler!!.postDelayed(mRunnable, splashDelay)
+//
+//    }
+//
+//    override fun onDestroy() {
+//        if(delayHandler != null){
+//            delayHandler!!.removeCallbacks(mRunnable)
+//        }
+//        super.onDestroy()
+//    }

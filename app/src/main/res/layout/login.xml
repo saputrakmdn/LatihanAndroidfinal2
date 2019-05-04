@@ -107,6 +107,7 @@
                android:layout_height="wrap_content"
                android:src="@drawable/gl1"
                android:layout_gravity="center"
+               android:id="@+id/go_sign"
     />
 
 </LinearLayout>

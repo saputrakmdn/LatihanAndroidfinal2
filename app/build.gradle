@@ -36,4 +36,19 @@ dependencies {
 
     implementation "android.arch.navigation:navigation-fragment:$nav_version" // use -ktx for Kotlin
     implementation "android.arch.navigation:navigation-ui:$nav_version" // use -ktx for Kotlin
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.firebase:firebase-auth:16.2.1'
+    implementation 'com.amitshekhar.android:jackson-android-networking:1.0.1'
+
+    //add firebase database
+    implementation 'com.google.firebase:firebase-database:16.1.0'
+    implementation 'com.android.support:design:27.0.0'
+
+    //firebase storage
+    implementation 'com.google.firebase:firebase-storage:16.1.0'
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
 }
+apply plugin: 'com.google.gms.google-services'
